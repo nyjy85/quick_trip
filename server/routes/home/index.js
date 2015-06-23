@@ -45,6 +45,7 @@ router.get('/:query', function(req, res, next){
 		return Promise.all(promiseArray).then(function(arr){
 			return arr.map(function(destination){
 				var $ = cheerio.load(destination[0].body);
+				// scraping dynamic data occurs
 				var longitude = parseFloat($('.mapContainer').attr('data-lng'));
 				var latitude = parseFloat($('.mapContainer').attr('data-lat'));
 				var place = $('#HEADING').text().trim();
