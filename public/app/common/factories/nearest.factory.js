@@ -1,7 +1,6 @@
 app.factory('TSP', function(){
 	return {
 		nearestNeighbor: function(coordinates, start){
-			console.log('this bee coordinates', coordinates, start);
 			var count = 0;
 
 			function NearestNeighbor(dataSet, startPoint){
@@ -53,7 +52,6 @@ app.factory('TSP', function(){
 			};
 
 			NearestNeighbor.prototype.pythagorean = function(lat, longi){
-				console.log('this.startPoint', this.startPoint)
 				var startX = this.startPoint[0];
 				var startY = this.startPoint[1];
 				return Math.sqrt(Math.pow(startX - lat, 2) + Math.pow(startY - longi, 2));
@@ -61,6 +59,7 @@ app.factory('TSP', function(){
 
 			var nn = new NearestNeighbor(coordinates, start);
 			var len = coordinates.length;
+			
 			for(var i = 0; i < len; i++){
 				nn.sortByX().getNearestK(3).getNN();
 			}
