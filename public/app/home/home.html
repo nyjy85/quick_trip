@@ -2,7 +2,6 @@
 <div class="row heading">
 	<div id="search-div" class="input-group input-group-lg col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
 	  <input ng-model="query" type="text" class="form-control" placeholder="Where do you wanna go?" aria-describedby="sizing-addon1">
-	  <code>{{query}}</code>
 	  <button id="search-btn" ng-click="sendQuery(query)" type="button" class="btn btn-default">Search</button>
 	  <div id="loader"><loader ng-show="loading"></loader></div>
 	</div>
