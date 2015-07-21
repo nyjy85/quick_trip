@@ -67,13 +67,8 @@ h2 {
 .tooltip {
   position: absolute;
   width: 200px;
-  height: 80px;
   background: #81c560;
   border-radius: 5px;
   pointer-events: none;
   padding-left: 6px;
   font-size: 13px; }
-
-#modules ul {
-  list-style: none;
-  padding-left: 0; }
