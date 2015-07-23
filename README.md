@@ -8,10 +8,10 @@
 In your terminal:
 
 ```
-git clone https://github.com/nyjy85/quick_trip.git
-npm install
-gulp build
-npm start
+$ git clone https://github.com/nyjy85/quick_trip.git
+$ npm install
+$ gulp build
+$ npm start
 ```
 
 ## Usage
